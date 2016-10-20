@@ -1,0 +1,16 @@
+/**app.wxss**/
+page{
+    height: 100%;
+    box-sizing: border-box;
+    font-family: "Open Sans", Arial, "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif,sans-serif;
+    font-size: 12px;
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

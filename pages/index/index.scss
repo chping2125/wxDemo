@@ -1,0 +1,40 @@
+$import-counter:0;
+.loginModal{
+  .login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    text{
+      width: 50px;
+      text-align: right;
+      margin-right: 5px;
+    }
+    input{
+      flex: 1;
+      border-bottom:1px solid #ccc;
+    }
+  }
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .userinfo-avatar {
+    width: 128rpx;
+    height: 128rpx;
+    border-radius: 50%;
+  }
+  .userinfo-nickname {
+    color: #aaa;
+  }
+  .userinfo-city{
+    margin-bottom: 5px;
+    color: #aaa;
+  }
+}
+.btn {
+  margin-top: 10px;
+  padding: 0 40px;
+  background-color: #ff6600!important;
+}

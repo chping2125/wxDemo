@@ -1,0 +1,16 @@
+<template name="nav">
+  <nav class="nav">
+      <scroll-view id="nav-scroll" scroll-x="true">
+          <view>
+              <ul>
+                  <li class="{{current ==0 ? 'active' : ''}}" catchtap="tapSwiper" data-index="0">首页</li>
+                  <li class="{{current ==1 ? 'active' : ''}}" catchtap="tapSwiper" data-index="1">融资速递</li>
+                  <li class="{{current ==2 ? 'active' : ''}}" catchtap="tapSwiper" data-index="2">初创公司</li>
+                  <li class="{{current ==3 ? 'active' : ''}}" catchtap="tapSwiper" data-index="3">消费升级</li>
+                  <li class="{{current ==4?  'active' : ''}}" catchtap="tapSwiper" data-index="4">文体消费</li>
+                  <li class="{{current ==5 ? 'active' : ''}}" catchtap="tapSwiper" data-index="5">智能硬件</li>
+              </ul>
+          </view>
+      </scroll-view>
+  </nav>
+</template>

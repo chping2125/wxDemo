@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/new/news",
+    "pages/project/project",
+    "pages/investors/investors",
+    "pages/my/my",
+    "pages/detail/detail",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundColor":"#ffffff",
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "创业邦",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+  },
+  "tabBar":{
+    "color":"#777",
+    "selectedColor":"#ff6600",
+    "backgroundColor":"#fff",
+    "borderStyle":"black",
+    "list": [{
+      "pagePath": "pages/new/news",
+      "text": "咨询",
+      "iconPath":"/images/zixun_new.png",
+      "selectedIconPath":"/images/zixun_orange_new.png"
+    },
+    {
+      "pagePath": "pages/project/project",
+      "text": "项目",
+      "iconPath":"/images/bangrongzi_new.png",
+      "selectedIconPath":"/images/bangrongzi_orange_new.png"
+    },
+    {
+      "pagePath": "pages/investors/investors",
+      "text": "投资人",
+      "iconPath":"/images/zixun_n_o.png",
+      "selectedIconPath":"/images/zixun_o.png"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "我的",
+      "iconPath":"/images/user_center.png",
+      "selectedIconPath":"/images/user_center_orange.png"
+    }]
+  }
+}

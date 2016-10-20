@@ -1,0 +1,22 @@
+<view class="project">
+  <view class="title">
+    <text>创业项目多媒体展示</text>
+  </view>
+  <view class="progress" wx:if ="{{progress.hidden}}">
+    <progress percent="{{progress.percent}}" show-info stroke-width="{{progress.width}}" color="{{progress.color}}"/>
+  </view>
+  <view class="video" wx:if ="{{!progress.hidden}}">
+    <view class="text">
+      <text class="title">腾讯大学创业故事</text>
+      <text class="content">一群志同道合的人，一起创业的故事。</text>
+    </view>
+    <video src="{{videoSrc}}" binderror="videoErrorCallback"></video>
+  </view>
+  <view class="audio">
+    <audio poster="{{poster}}" name="{{name}}" author="{{author}}" src="{{src}}" action="{{action}}" controls loop></audio>
+    <view class="text">
+      <text class="title">腾讯大学创业故事</text>
+      <text class="content">一群志同道合的人，一起创业的故事。</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,121 @@
+.news-box {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+  .news-box nav {
+    height: 40px;
+    width: 100%;
+    overflow: hidden; }
+    .news-box nav scroll-view {
+      background: #e8e8e8;
+      width: 100%; }
+      .news-box nav scroll-view view {
+        width: 408px; }
+    .news-box nav li {
+      line-height: 40px;
+      padding: 12px; }
+    .news-box nav .active {
+      color: #ff6600;
+      border-bottom: 1px solid #ff6600; }
+  .news-box swiper {
+    flex: 1; }
+    .news-box swiper .news-index {
+      display: flex;
+      flex-direction: column; }
+      .news-box swiper .news-index scroll-view {
+        height: 100%; }
+        .news-box swiper .news-index scroll-view .news-button {
+          border: 0 !important;
+          font-size: 12px;
+          line-height: 12px;
+          color: #999; }
+        .news-box swiper .news-index scroll-view .news-slide {
+          height: 150px; }
+          .news-box swiper .news-index scroll-view .news-slide .slide-image {
+            height: 100%;
+            width: 100%; }
+        .news-box swiper .news-index scroll-view .news-list {
+          padding: 10px;
+          border: 1px solid #ccc; }
+          .news-box swiper .news-index scroll-view .news-list .new-header {
+            display: flex;
+            align-content: center; }
+            .news-box swiper .news-index scroll-view .news-list .new-header view {
+              height: 24px; }
+              .news-box swiper .news-index scroll-view .news-list .new-header view image {
+                width: 46px;
+                height: 24px;
+                padding-right: 20px; }
+            .news-box swiper .news-index scroll-view .news-list .new-header text {
+              color: #000;
+              font-size: 16px;
+              font-weight: bold;
+              line-height: 24px; }
+          .news-box swiper .news-index scroll-view .news-list .new-article {
+            padding: 10px 0;
+            font-size: 14px; }
+          .news-box swiper .news-index scroll-view .news-list .new-footer {
+            font-size: 10px;
+            color: #999; }
+            .news-box swiper .news-index scroll-view .news-list .new-footer .new-time {
+              padding-right: 5px; }
+    .news-box swiper .secondNews {
+      height: 100%; }
+      .news-box swiper .secondNews scroll-view {
+        height: 100%; }
+        .news-box swiper .secondNews scroll-view .todayNews .t-header {
+          padding: 8px 10px;
+          height: 14px;
+          border-bottom: 1px solid #999; }
+          .news-box swiper .secondNews scroll-view .todayNews .t-header .line {
+            display: inline-block;
+            height: 14px;
+            width: 3px;
+            background: #ff6600; }
+          .news-box swiper .secondNews scroll-view .todayNews .t-header .today {
+            padding-left: 5px;
+            color: #999;
+            line-height: 14px; }
+        .news-box swiper .secondNews scroll-view .todayNews .todayNewList {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-content: center;
+          box-sizing: border-box; }
+          .news-box swiper .secondNews scroll-view .todayNews .todayNewList .todayNewList-li {
+            height: 55px;
+            padding: 10px;
+            overflow: hidden;
+            display: flex;
+            border-bottom: 1px solid #ccc; }
+            .news-box swiper .secondNews scroll-view .todayNews .todayNewList .todayNewList-li image {
+              width: 55px;
+              height: 55px; }
+            .news-box swiper .secondNews scroll-view .todayNews .todayNewList .todayNewList-li text {
+              font-size: 14px;
+              line-height: 18px;
+              padding: 9px 0 9px 10px; }
+          .news-box swiper .secondNews scroll-view .todayNews .todayNewList button {
+            width: 100%;
+            border: 0;
+            color: #ff6600;
+            background: #fff;
+            font-size: 14px; }
+        .news-box swiper .secondNews scroll-view .todayNewsToOther {
+          height: 10px;
+          background: #f7f7f7; }
+        .news-box swiper .secondNews scroll-view .otherNewsList {
+          padding: 10px;
+          border-bottom: 1px solid #ccc; }
+          .news-box swiper .secondNews scroll-view .otherNewsList .text {
+            line-height: 24px;
+            height: 48px;
+            overflow: hidden; }
+            .news-box swiper .secondNews scroll-view .otherNewsList .text .bold {
+              font-size: 14px;
+              font-weight: bold; }
+          .news-box swiper .secondNews scroll-view .otherNewsList .footer {
+            color: #ccc;
+            padding-top: 10px; }
+            .news-box swiper .secondNews scroll-view .otherNewsList .footer .time {
+              padding-right: 10px; }

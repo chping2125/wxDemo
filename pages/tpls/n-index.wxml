@@ -1,0 +1,31 @@
+<template name="index">
+  <scroll-view  wx:if="{{loading}}" scroll-y="true" bindscrolltoupper="actionToupper" bindscrolltolower="actionTolower" scroll-top="{{refrechHidden==false ?1:0}}">
+      <button wx:if="{{refrechHidden}}" class="news-button" plain="true" loading="true" disabled="true">刷新中...</button>
+
+      <view>
+          <swiper class="news-slide" indicator-dots="{{swiperChild.dots}}" autoplay="{{swiperChild.autoplay}}" interval="{{swiperChild.interval}" duration="{{swiperChild.duration}}"  bindchange="changeSwiperChild">
+              <block wx:for="{{swiperImg}}" wx:for-item="item">
+                  <swiper-item>
+                      <image src="{{item}}" class="slide-image"></image>
+                  </swiper-item>
+              </block>
+          </swiper>
+      </view>
+
+      <view class="news-list" bindtap="bindBap" wx:for="{{news}}" wx:for-index="index" wx:for-item="item">
+          <view class="new-header">
+              <view><image src="{{item.img}}"></image></view>
+              <text>{{item.title}}</text>
+          </view>
+          <view class="new-article">
+              <text>{{item.article}}</text>
+          </view>
+          <view class="new-footer">
+              <text class="new-time">{{item.time}}</text>
+              <text class="new-author">{{item.author}}</text>
+          </view>
+      </view>
+
+      <button wx:if="{{moreHidden}}" class="news-button" plain="true" loading="true" disabled="true">加载更多...</button>
+  </scroll-view>
+</template>

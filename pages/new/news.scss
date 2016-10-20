@@ -1,0 +1,161 @@
+$import-counter:0;
+.news-box{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    nav{
+        height: 40px;
+        width: 100%;
+        overflow: hidden;
+        scroll-view{
+          background: #e8e8e8;
+          width: 100%;
+          view {
+            width: 408px;
+          }
+        }
+        li{
+            line-height: 40px;
+            padding: 12px;
+        }
+        .active{
+            color: #ff6600;
+            border-bottom: 1px solid #ff6600;
+        }
+    }
+
+    swiper{
+      flex: 1;
+      .news-index{
+        display: flex;
+        flex-direction: column;
+        scroll-view{
+            height: 100%;
+            .news-button{
+                border: 0!important;
+                font-size: 12px;
+                line-height: 12px;
+                color: #999;
+            }
+            .news-slide{
+                height: 150px;
+                .slide-image{
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+            .news-list{
+                padding: 10px;
+                border:1px solid #ccc;
+                .new-header{
+                    display: flex;
+                    align-content: center;
+                    view{
+                        height: 24px;
+                        image{
+                            width: 46px;
+                            height: 24px;
+                            padding-right: 20px;
+                        }
+                    }
+                    text{
+                        color: #000;
+                        font-size: 16px;
+                        font-weight: bold;
+                        line-height: 24px;
+                    }
+                }
+                .new-article{
+                    padding: 10px 0;
+                    font-size: 14px;
+                }
+                .new-footer{
+                    font-size: 10px;
+                    color: #999;
+                    .new-time{
+                        padding-right: 5px;
+                    }
+                }
+            }
+        }
+      }
+      .secondNews{
+          height: 100%;
+          scroll-view{
+            height: 100%;
+            .todayNews{
+              .t-header{
+                padding: 8px 10px;
+                height: 14px;
+                border-bottom: 1px solid #999;
+                .line{
+                  display: inline-block;
+                  height: 14px;
+                  width: 3px;
+                  background: #ff6600;
+                }
+                .today{
+                  padding-left: 5px;
+                  color: #999;
+                  line-height: 14px;
+                }
+              }
+              .todayNewList{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-content: center;
+                box-sizing: border-box;
+                .todayNewList-li{
+                  height: 55px;
+                  padding: 10px;
+                  overflow: hidden;
+                  display: flex;
+                  border-bottom: 1px solid #ccc;
+                  image{
+                    width: 55px;
+                    height: 55px;
+                  }
+                  text{
+                    font-size: 14px;
+                    line-height: 18px;
+                    padding: 9px 0 9px 10px;
+                  }
+                }
+                button{
+                  width: 100%;
+                  border: 0;
+                  color: #ff6600;
+                  background: #fff;
+                  font-size: 14px;
+                }
+              }
+            }
+            .todayNewsToOther{
+              height: 10px;
+              background: #f7f7f7;
+            }
+            .otherNewsList{
+              padding: 10px;
+              border-bottom: 1px solid #ccc;
+              .text{
+                line-height: 24px;
+                height: 48px;
+                overflow: hidden;
+                .bold{
+                  font-size: 14px;
+                  font-weight: bold;
+                }
+              }
+              .footer{
+                color: #ccc;
+                padding-top: 10px;
+                .time{
+                  padding-right: 10px;
+                }
+              }
+            }
+          }
+      }
+    }
+}

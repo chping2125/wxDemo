@@ -1,0 +1,12 @@
+<template name="modal">
+  <modal class="loginModal" title="登录" confirm-text="确认" cancel-text="取消" hidden="{{loginHidden}}" bindconfirm="confirmChange" bindcancel="cancelChange">
+    <label class="login">
+      <text>用户名:</text>
+      <input type="text" bindchange="usernameChange" value="{{userInfo.username}}" auto-focus/>
+    </label>
+    <label class="login">
+      <text>密码:</text>
+      <input type="text" bindchange="passwordChange" value="{{userInfo.password}}" password="true"/>
+    </label>
+  </modal>
+</template>

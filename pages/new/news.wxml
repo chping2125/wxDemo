@@ -1,0 +1,30 @@
+<import src="/pages/tpls/n-index.wxml"/>
+<import src="/pages/tpls/n-nav.wxml"/>
+<import src="/pages/tpls/n-news.wxml"/>
+<import src="/pages/tpls/toast.wxml"/>
+
+<view class="news-box">
+    <template is="nav" data="{{current}}"/>
+    <template is="toast" data="{{...toast}}"/>
+    <include src="/pages/tpls/loading.wxml"/>
+    <swiper  duration="{{swiper.duration}}" current="{{current}}" bindchange="changeSwiper">
+      <swiper-item class="news-index">
+        <template is="index" data="{{loading,refrechHidden,swiperChild,swiperImg,news,moreHidden}}"/>
+      </swiper-item>
+      <swiper-item class="secondNews">
+          <template is="news" data="{{todayNews,moreTodayNewsBtn,otherNews,moreHidden2}}"/>
+      </swiper-item>
+      <swiper-item>
+          三个
+      </swiper-item>
+      <swiper-item>
+          四个
+      </swiper-item>
+      <swiper-item>
+         五个
+      </swiper-item>
+      <swiper-item>
+         六个
+      </swiper-item>
+    </swiper>
+</view>

@@ -1,0 +1,4 @@
+<view class="artical">
+  <text class="head">{{title}}</text>
+  <text class="content">{{content}}</text>
+</view>

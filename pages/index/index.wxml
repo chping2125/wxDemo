@@ -1,0 +1,11 @@
+<import src="/pages/tpls/modal.wxml"/>
+<view class="container">
+  <template is="modal" data="{{loginHidden,userInfo}}"/>
+
+  <view  bindtap="bindUserTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarImg}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.province + userInfo.city}}</text>
+    <text class="userinfo-city">{{userInfo.username}}</text>
+  </view>
+  <button type="default" bindtap="btn" data-type="{{text}}" class="btn">{{text}}</button>
+</view>

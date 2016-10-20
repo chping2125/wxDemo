@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#ff6600",
+    "navigationBarTitleText": "项目",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh":false
+  }

@@ -1,0 +1,35 @@
+<template name="news">
+  <scroll-view scroll-y="true" bindscrolltolower="actionTolower">
+      <view class="todayNews">
+          <view>
+              <view class="t-header">
+                  <text class="line"></text>
+                  <p class="today">今日</p>
+              </view>
+              <view class="todayNewList">
+                <navigator url="../detail/detail?id={{item.id}}" wx:for="{{todayNews}}" wx:for-index="index" wx:for-item="item">
+                  <view class="todayNewList-li">
+                      <view><image src="{{item.img}}"></image></view>
+                      <text>{{item.text}}</text>
+                  </view>
+                </navigator>
+                <button wx:if="{{moreTodayNewsBtn}}" bindtap="moreTodayNews">加载更多</button>
+              </view>
+          </view>
+      </view>
+      <view class="todayNewsToOther"></view>
+      <view class="otherNews">
+          <view class="otherNewsList" wx:for="{{otherNews}}" wx:for-item="item">
+              <view class="text">
+                <text class="bold">{{timeMD}}融资清单:</text>
+                <text>{{item.title}}</text>
+              </view>
+              <view class="footer">
+                <text class="time">{{item.time}}</text>
+                <text class="author">{{item.author}}</text>
+              </view>
+          </view>
+      </view>
+      <button wx:if="{{moreHidden2}}" class="news-button" plain="true" loading="true" disabled="true">加载更多...</button>
+  </scroll-view>
+</template>

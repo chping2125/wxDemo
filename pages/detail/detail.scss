@@ -1,0 +1,17 @@
+$import-counter:0;
+.artical{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  .head{
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    align-items: center;
+  }
+  .content{
+    flex: 1;
+  }
+}

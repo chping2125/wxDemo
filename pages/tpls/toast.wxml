@@ -1,0 +1,7 @@
+<template name="toast">
+  <view class="body-view">
+    <toast hidden="{{hidden}}" duration="duration" bindchange="toastChange">
+      亲，快讯是用来简单看看的，是不能点的呀！
+    </toast>
+  </view>
+</template>
